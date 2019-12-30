@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>strategy</module>
+        <module>template</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
