@@ -1,8 +1,6 @@
 ### 策略模式
-##### 应用场景
-+ 系统需要在多种算法中快速地切换
-+ 系统中有一些类仅行为不同
-+ 系统中存在多重条件选择语句
+##### 主要思想
++ 使不同算法可以被相互替换而不影响系统运行
 ##### 实现
 ![binaryTree](src/main/resources/uml.png "binaryTree")
 ###### 接口
@@ -44,4 +42,11 @@ public class StrategyContext {
 }
 ```
 ###### 单元测试
+```
+    public void test() {
+        log.info(context.strategySelect("resourceA").doSomething());
+        log.info(context.strategySelect("resourceB").doSomething());
+        log.info(context.strategySelect("resourceDefault").doSomething());
+    }
+```
 ![binaryTree](src/main/resources/testRes.png "binaryTree")
